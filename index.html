@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<title>Angular</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body ng-controller="myAppController">
+
+	<input type="text" ng-model="nome">
+	<h3>Hello, {{nome}}</h3>
+
+	<ul>
+		<li ng-repeat="item in list">{{item.name | uppercase}} - {{item.age + 10}}</li>
+	</ul>
+
+	<a href="" ng-click="falar()">Click me</a>
+
+<script type="text/javascript" src="js/angular.min.js"></script>
+<script type="text/javascript" src="js/myApp.js"></script>
+</body>
+</html>
